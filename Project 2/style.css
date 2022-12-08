@@ -91,6 +91,15 @@ a{
     margin-top: 50px;
     margin-left: 10px;
     border-radius: 10px;
+    transition-duration: 1ms;
+    background-color: #F7F7F7;
+    color: black;
+
+}
+.container:hover{
+    background-color:aqua;
+    color: black;
+    box-shadow: #424242 5px 5px;
 }
 .trip1{
     border-color: #FFFFFF;
@@ -113,7 +122,16 @@ a{
     margin-top: 10px;
     margin-left: 10px;
     border-radius: 10px; 
+    transition-duration: 1ms;
+    background-color: #F7F7F7;
+    color: black;
+
 }
+.container2:hover{
+    background-color:aqua;
+    color: black;
+    box-shadow: #424242 5px 5px;
+}    
 .a1{
     
     color: #424242;
