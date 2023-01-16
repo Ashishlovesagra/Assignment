@@ -35,7 +35,7 @@
   width: 204px;
   height: 77px;
   margin-top: 30px;
-  margin-left: 222px;
+  margin-left: 124px;
   background-image: url(./images/clock_logo.png);
 }
 .alarambox {
@@ -44,7 +44,7 @@
   border-radius: 10px;
   width: 566px;
   height: 363px;
-  margin-left: 222px;
+  margin-left: 124px;
   margin-top: 25px;
 }
 .insidealarambox {
@@ -98,7 +98,7 @@
   border-radius: 10px;
   width: 299px;
   height: 50px;
-  margin-left: 222px;
+  margin-left: 124px;
   margin-top: 10px;
   background-image: linear-gradient(
     to right,
@@ -164,7 +164,7 @@
   border-radius: 10px;
   width: 566px;
   height: 77px;
-  margin-left: 222px;
+  margin-left: 124px;
   margin-top: 10px;
   background-color: #9140b5;
 }
@@ -294,7 +294,7 @@
   background-color: whitesmoke;
   position: absolute;
   top: 60px;
-  left: 900px;
+  left: 820px;
   z-index: 4;
 }
 .box33 {
@@ -305,7 +305,7 @@
   background-color: #9140b5;
   position: absolute;
   top: 75px;
-  left: 918px;
+  left: 836px;
   z-index: 3;
 }
 .box44 {
