@@ -108,6 +108,9 @@
     #f1a7c5
   );
 }
+button:hover{
+  cursor: pointer;
+}
 .btntxt1{
   font-size: 24px;
   color: white;
@@ -137,7 +140,7 @@
   width: 200px;
   height: 94px;
   margin: 10px 41px 13px 12px;
-  font-size: 15px;
+  font-size: 12px;
   color: #f25cfe;
   line-height: 25px;
 }

@@ -33,3 +33,26 @@ function clock(){
 }
 clock();
 setInterval(clock, 1000);
+
+
+ function getOption() {
+
+
+    var e = document.getElementById("select1");
+    var text1 = e.options[e.selectedIndex].text;
+    
+    var f = document.getElementById("select2");
+    var text2 = f.options[f.selectedIndex].text;
+    
+    var g = document.getElementById("select3");
+    var text3 = g.options[g.selectedIndex].text;
+
+    var h = document.getElementById("select4");
+    var text4 = h.options[h.selectedIndex].text;
+    
+    
+    var idExist = document.getElementById("detailBox");
+    if(idExist){
+    idExist.innerHTML = `Wake Up Time : ${text1} <br> Lunch Time : ${text2}<br> Nap Time : ${text3}<br> Sleep Time :${text4}`;
+    }     
+} 
