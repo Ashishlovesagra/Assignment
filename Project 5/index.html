@@ -1,0 +1,66 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/393bd706fe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="name_of_head">
+            <span style="font-weight: bold; font-size: 70px;">Task</span><span style="position: relative; left: 10px; font-size: 70px;">Lists</span>
+        </div>
+        <div id="Addbutton"  onclick="modal()" >
+            <i class="fas fa-plus-circle coloris "></i>
+            <span id="button_text">Add List</span>
+        </div>
+
+        <div id="empty-list">
+            No Items in the todo list
+        </div>
+    </div>
+
+    <div id="modaldiv">
+        <div id="modalbox">
+            <span class="main-text modal-content">Add New List</span>
+            <input id="inputM-box" class="input-box modal-content" type="text" placeholder="Enter List Here"> <br></input>
+            <button id= "modal-add-button" class="red-button modal-content" onclick="addCard()">add</button>
+            <button id="modal-close-button" class="red-button modal-content" onclick="closeModal()">close</button>
+        </div>
+    </div>
+
+    <div id="modalDiv_card">
+        <div id="modalBox_card">
+            <span class="main-text modal-content">Add New Item</span>
+            <input id="inputM-box-card" class="input-box modal-content" type="text" placeholder="Enter Item Here"> <br></input>
+            <button id= "modal-add-button" class="red-button modal-content" onclick="addList()">add</button>
+            <button id="modal-close-button" class="red-button modal-content" onclick="closeCardModal()">close</button>
+        </div>
+    </div>
+
+    <div style="display: none;" class="this-list-element" id="this-list-element">
+        <button class="innerlist-button" value="" onclick="completedTask(this)">Mark as Done</button>
+    </div>
+    
+    <div id="outer_container">
+        <div class="card" id="card">
+            <div class="wrap-cont">
+            <option class="card-head" onclick="headerFunc(this.value)">Trip</option>
+            <br><hr>
+            <div class="add-list-after-this"></div>
+            <br>
+            <div class="buttons-in-card">
+                <button class="fas fa-trash delete-button-in-card"></button>    
+                <button class="fas fa-plus-circle add-button-in-card"></button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
