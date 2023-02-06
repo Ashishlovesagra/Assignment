@@ -75,7 +75,6 @@ function closeCardModal(){
 
 function addSubtask(val) {
     document.getElementById("modalDiv_card").style.display = "block";
-    //console.log(val);
     value_id = val;
 };
 
@@ -94,8 +93,6 @@ function deleteCard(val){
     if(arr_of_obj.size==0){
         document.getElementById('empty-list').style.display = 'block';
     }
-    
-    //console.log(arr_of_obj);
 };
 
 function createCard(){
