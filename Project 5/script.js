@@ -70,7 +70,8 @@ function closeCardModal(){
 }
 //adding sublist items to card
 function addSubtask(val) {
-    document.getElementById("modal-div-card").style.display = "block";
+    document.getElementById("modalDiv_card").style.display = "block";
+    //console.log(val);
     value_id = val;
 };
 
@@ -89,6 +90,7 @@ function deleteCard(val){
         document.getElementById('empty-list').style.display = 'block';
     }
     
+    //console.log(arr_of_obj);
 };
 //cloning of card
 function createCard(){
@@ -162,4 +164,4 @@ function displayAll(){
     };
     document.getElementById('card-dynamic-head').innerText = ``;
     document.getElementById('card-dynamic-head').style.display = 'none';
-}
+};
