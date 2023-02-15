@@ -3,26 +3,22 @@ var value_id;
 var title_flag = false;
 var subtask = new Map;
 
-//popup to add card
 function modal(){
     document.getElementById("modal-div").style.display = "block";
     document.getElementById("header").style.filter="blur(5px)";
 };
 
-//add button in popup of add card
 function addCard(){
     var card_title = document.getElementById("modal-input-box").value;
     createObj(card_title);
     closeModal();
 }
 
-//close button in popup of add card
 function closeModal(){
     document.getElementById("modal-div").style.display = "none";
     document.getElementById("header").style.filter="blur(0px)"
 }
 
-//assign card detais to set
 function createObj(title){
     document.getElementById('empty-list').style.display = 'none'
     var card_obj = {
@@ -34,7 +30,6 @@ function createObj(title){
     createCard(card_obj.id);
 };
 
-//cloning of subtask
 function addList(){
     var cloned_list_item = document.querySelector(".this-list-element").cloneNode(true);
     var card_item = document.getElementById('modal-input-box-card').value;
@@ -64,18 +59,16 @@ function addList(){
     document.getElementById(`${value_id}`).getElementsByClassName('add-list-after-this')[0].appendChild(cloned_list_item).appendChild(done_button);
     closeCardModal();
 }
-//close item box 
 function closeCardModal(){
     document.getElementById('modal-div-card').style.display = "none";
 }
-//adding sublist items to card
+
 function addSubtask(val) {
     document.getElementById("modalDiv_card").style.display = "block";
-    //console.log(val);
     value_id = val;
 };
 
-//delete particular card
+
 function deleteCard(val){
     var delete_div = document.getElementById(`${val}`);
     for(obj of arr_of_obj){
@@ -90,21 +83,17 @@ function deleteCard(val){
         document.getElementById('empty-list').style.display = 'block';
     }
     
-    //console.log(arr_of_obj);
 };
-//cloning of card
 function createCard(){
     var first_card = document.querySelector('.card').cloneNode(true);
     display(first_card);
 };
 
-//task list item done
 function completedTask(value){
     document.getElementById(`${value}`).style.textDecoration = 'line-through';
     document.getElementById(`${value}`).style.color = '#112D4E';
     document.getElementById(`check-done-${value}`).remove();
 }
-//appending cards to outer container
 function display(card){
     document.getElementById('empty-list').style.display = 'none'
     arr_of_obj.forEach(element => {
@@ -125,7 +114,6 @@ function display(card){
     card.style.display = "block";
     document.getElementById("outer-container").appendChild(card);
 }
-//selected card on entire page
 function headerFunc(val){
     var card_header;
     for(let ele of arr_of_obj){
@@ -153,7 +141,6 @@ function headerFunc(val){
     title_flag = true;
 };
 
-//after clicking back button main page
 function displayAll(){
     title_flag = false;
     document.querySelector("#app-name").style.display = 'block';
